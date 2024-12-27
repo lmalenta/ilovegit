@@ -18,12 +18,12 @@ jobs:
       - run: echo "🍏 This job's status is ${{ job.status }}."
 
 
-  Now-save-a-file:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - run: mkdir ./artifacts && ls -R ${{ github.workspace }} >> ./artifacts/myls.txt
-      - uses: actions/upload-artifact@v4
-        with:
-          name: myls.txt
-          path: ./artifacts/myls.txt
+  # Now-save-a-file:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v4
+  #     - run: mkdir ./artifacts && ls -R ${{ github.workspace }} >> ./artifacts/myls.txt
+  #     - uses: actions/upload-artifact@v4
+  #       with:
+  #         name: myls.txt
+  #         path: ./artifacts/myls.txt

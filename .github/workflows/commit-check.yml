@@ -1,0 +1,28 @@
+name: Check README for Name
+
+on: [commit]
+
+jobs:
+  check-readme:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Check if README.md contains your name
+      id: check_readme
+      run: |
+        if ! grep -q "Lorenzo Malentacca" README.md; then
+          echo "README.md does not contain your name. Commit rejected."
+          exit 1
+        fi
+
+    - name: Commit changes
+      if: success()
+      run: |
+        git config --global user.name "${{ github.actor }}"
+        git config --global user.email "${{ github.actor }}@users.noreply.github.com"
+        git add .
+        git commit -m "Automated commit"
+        git push
