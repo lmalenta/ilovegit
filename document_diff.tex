@@ -1,0 +1,101 @@
+\documentclass{article}
+%DIF LATEXDIFF DIFFERENCE FILE
+%DIF DEL document_v1.tex   Fri Dec 27 17:27:53 2024
+%DIF ADD document_v2.tex   Fri Dec 27 17:27:27 2024
+\usepackage{graphicx} % Required for inserting images
+
+\title{Primary vertex timing reconstruction with the LHCb Ring Imaging Cherenkov detectors }
+% \author{Lorenzo Malentacca}
+\date{}
+%DIF PREAMBLE EXTENSION ADDED BY LATEXDIFF
+%DIF UNDERLINE PREAMBLE %DIF PREAMBLE
+\RequirePackage[normalem]{ulem} %DIF PREAMBLE
+\RequirePackage{color}\definecolor{RED}{rgb}{1,0,0}\definecolor{BLUE}{rgb}{0,0,1} %DIF PREAMBLE
+\providecommand{\DIFadd}[1]{{\protect\color{blue}\uwave{#1}}} %DIF PREAMBLE
+\providecommand{\DIFdel}[1]{{\protect\color{red}\sout{#1}}} %DIF PREAMBLE
+%DIF SAFE PREAMBLE %DIF PREAMBLE
+\providecommand{\DIFaddbegin}{} %DIF PREAMBLE
+\providecommand{\DIFaddend}{} %DIF PREAMBLE
+\providecommand{\DIFdelbegin}{} %DIF PREAMBLE
+\providecommand{\DIFdelend}{} %DIF PREAMBLE
+\providecommand{\DIFmodbegin}{} %DIF PREAMBLE
+\providecommand{\DIFmodend}{} %DIF PREAMBLE
+%DIF FLOATSAFE PREAMBLE %DIF PREAMBLE
+\providecommand{\DIFaddFL}[1]{\DIFadd{#1}} %DIF PREAMBLE
+\providecommand{\DIFdelFL}[1]{\DIFdel{#1}} %DIF PREAMBLE
+\providecommand{\DIFaddbeginFL}{} %DIF PREAMBLE
+\providecommand{\DIFaddendFL}{} %DIF PREAMBLE
+\providecommand{\DIFdelbeginFL}{} %DIF PREAMBLE
+\providecommand{\DIFdelendFL}{} %DIF PREAMBLE
+\newcommand{\DIFscaledelfig}{0.5}
+%DIF HIGHLIGHTGRAPHICS PREAMBLE %DIF PREAMBLE
+\RequirePackage{settobox} %DIF PREAMBLE
+\RequirePackage{letltxmacro} %DIF PREAMBLE
+\newsavebox{\DIFdelgraphicsbox} %DIF PREAMBLE
+\newlength{\DIFdelgraphicswidth} %DIF PREAMBLE
+\newlength{\DIFdelgraphicsheight} %DIF PREAMBLE
+% store original definition of \includegraphics %DIF PREAMBLE
+\LetLtxMacro{\DIFOincludegraphics}{\includegraphics} %DIF PREAMBLE
+\newcommand{\DIFaddincludegraphics}[2][]{{\color{blue}\fbox{\DIFOincludegraphics[#1]{#2}}}} %DIF PREAMBLE
+\newcommand{\DIFdelincludegraphics}[2][]{% %DIF PREAMBLE
+\sbox{\DIFdelgraphicsbox}{\DIFOincludegraphics[#1]{#2}}% %DIF PREAMBLE
+\settoboxwidth{\DIFdelgraphicswidth}{\DIFdelgraphicsbox} %DIF PREAMBLE
+\settoboxtotalheight{\DIFdelgraphicsheight}{\DIFdelgraphicsbox} %DIF PREAMBLE
+\scalebox{\DIFscaledelfig}{% %DIF PREAMBLE
+\parbox[b]{\DIFdelgraphicswidth}{\usebox{\DIFdelgraphicsbox}\\[-\baselineskip] \rule{\DIFdelgraphicswidth}{0em}}\llap{\resizebox{\DIFdelgraphicswidth}{\DIFdelgraphicsheight}{% %DIF PREAMBLE
+\setlength{\unitlength}{\DIFdelgraphicswidth}% %DIF PREAMBLE
+\begin{picture}(1,1)% %DIF PREAMBLE
+\thicklines\linethickness{2pt} %DIF PREAMBLE
+{\color[rgb]{1,0,0}\put(0,0){\framebox(1,1){}}}% %DIF PREAMBLE
+{\color[rgb]{1,0,0}\put(0,0){\line( 1,1){1}}}% %DIF PREAMBLE
+{\color[rgb]{1,0,0}\put(0,1){\line(1,-1){1}}}% %DIF PREAMBLE
+\end{picture}% %DIF PREAMBLE
+}\hspace*{3pt}}} %DIF PREAMBLE
+} %DIF PREAMBLE
+\LetLtxMacro{\DIFOaddbegin}{\DIFaddbegin} %DIF PREAMBLE
+\LetLtxMacro{\DIFOaddend}{\DIFaddend} %DIF PREAMBLE
+\LetLtxMacro{\DIFOdelbegin}{\DIFdelbegin} %DIF PREAMBLE
+\LetLtxMacro{\DIFOdelend}{\DIFdelend} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFaddbegin}{\DIFOaddbegin \let\includegraphics\DIFaddincludegraphics} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFaddend}{\DIFOaddend \let\includegraphics\DIFOincludegraphics} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFdelbegin}{\DIFOdelbegin \let\includegraphics\DIFdelincludegraphics} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFdelend}{\DIFOaddend \let\includegraphics\DIFOincludegraphics} %DIF PREAMBLE
+\LetLtxMacro{\DIFOaddbeginFL}{\DIFaddbeginFL} %DIF PREAMBLE
+\LetLtxMacro{\DIFOaddendFL}{\DIFaddendFL} %DIF PREAMBLE
+\LetLtxMacro{\DIFOdelbeginFL}{\DIFdelbeginFL} %DIF PREAMBLE
+\LetLtxMacro{\DIFOdelendFL}{\DIFdelendFL} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFaddbeginFL}{\DIFOaddbeginFL \let\includegraphics\DIFaddincludegraphics} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFaddendFL}{\DIFOaddendFL \let\includegraphics\DIFOincludegraphics} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFdelbeginFL}{\DIFOdelbeginFL \let\includegraphics\DIFdelincludegraphics} %DIF PREAMBLE
+\DeclareRobustCommand{\DIFdelendFL}{\DIFOaddendFL \let\includegraphics\DIFOincludegraphics} %DIF PREAMBLE
+%DIF COLORLISTINGS PREAMBLE %DIF PREAMBLE
+\RequirePackage{listings} %DIF PREAMBLE
+\RequirePackage{color} %DIF PREAMBLE
+\lstdefinelanguage{DIFcode}{ %DIF PREAMBLE
+%DIF DIFCODE_UNDERLINE %DIF PREAMBLE
+  moredelim=[il][\color{red}\sout]{\%DIF\ <\ }, %DIF PREAMBLE
+  moredelim=[il][\color{blue}\uwave]{\%DIF\ >\ } %DIF PREAMBLE
+} %DIF PREAMBLE
+\lstdefinestyle{DIFverbatimstyle}{ %DIF PREAMBLE
+	language=DIFcode, %DIF PREAMBLE
+	basicstyle=\ttfamily, %DIF PREAMBLE
+	columns=fullflexible, %DIF PREAMBLE
+	keepspaces=true %DIF PREAMBLE
+} %DIF PREAMBLE
+\lstnewenvironment{DIFverbatim}{\lstset{style=DIFverbatimstyle}}{} %DIF PREAMBLE
+\lstnewenvironment{DIFverbatim*}{\lstset{style=DIFverbatimstyle,showspaces=true}}{} %DIF PREAMBLE
+\lstset{extendedchars=\true,inputencoding=utf8}
+
+%DIF END PREAMBLE EXTENSION ADDED BY LATEXDIFF
+
+\begin{document}
+
+\maketitle
+
+During LHC High-Luminosity phase, the LHCb RICH detector will face challenges due to increased particle multiplicity and high occupancy. Introducing sub-100ps time information becomes crucial for maintaining excellent particle identification (PID) performance. The LHCb RICH collaboration plans to anticipate the introduction of timing through an enhancement program during the third LHC Long Shutdown. In the RICH detector, Cherenkov photons from a track arrive nearly simultaneously at the detector plane, allowing precise hit time prediction. The RICH reconstruction algorithm computes track and photon time-of-flight and estimates where photons are expected on the photodetector plane. Determining the primary vertex time (PV T$_0$) is crucial in predicting the time of arrival of photons on the photodetector plane. Adding time information allows applying a software time gate around the predicted time per track to enhance signal-to-background ratio and PID performance. This contribution describes how to estimate the PV T$_0$ using RICH information only, a novel approach for LHCb. The proposed algorithm computes a reconstructed PV time for every photon from hit time and tracking information. The PV T$_0$ is extracted by averaging this reconstructed time for all photons belonging to the PV. The challenge lies in correctly associate photons to their PV, which is a two-step process: PV-track and track-photon associations, both presenting inefficiencies. Results compare the estimated PV time resolution with Monte Carlo simulations. This contribution aims to describe the integration of fast-timing in the RICH detector, illustrating the impact of the PV time estimation method on PID performance.
+
+ %DIF < %During the High-Luminosity LHC phase, the LHCb RICH detector will face challenges due to increased particle multiplicity and high occupancy. Therefore, the introduction of sub-100ps time information will be crucial to maintaining its excellent particle identification (PID) performance. The LHCb RICH collaboration plans to anticipate the introduction of timing through an enhancement program to be deployed during the third LHC Long Shutdown. In the RICH detector, Cherenkov photons from a track arrive nearly simultaneously at the detector plane, enabling precise hit time prediction. The RICH reconstruction algorithm utilizes tracking information and detector geometry to compute track and photon time-of-flight and predict where photons should be expected on the photodetector plane for a given particle mass hypothesis. This prediction is then compared to the observed photon distribution, and a likelihood is calculated. The maximum-likelihood solution is searched to establish the best set of mass hypotheses. In the reconstruction process, determining the primary vertex time (PV T$_0$) is essential to predict the time of arrival of the photons on the RICH photon-detector plane. With the addition of photon hit time information, a software time gate can be applied around the predicted time per track to increase the signal-to-background rate and improve PID performance. Therefore, determining the PV timing is a key element for the future detector performance. This contribution describes how the PV T$_0$ can be estimated using RICH information only, marking a novel approach for LHCb. For every photon, the proposed algorithm computes a reconstructed PV time from hit time and tracking information. The PV T$_0$ is extracted by averaging this reconstructed time for all the photons belonging to the PV. The challenge lies in correctly associating photons with their PV, which is a two-step process: PV-track and track-photon associations, both presenting inefficiencies. The proposed algorithm exploits tracks and photon information, as well as detector properties, to minimise these inefficiencies and improve the PV T$_0$ estimation. Results are presented for the resolution of the estimated PV time compared with Monte Carlo simulations. Overall, this contribution aims to describe the integration of fast-timing in the RICH detector and presents results on its performance, particularly illustrating the impact of the presented PV time estimation method on the detector PID performance.%%
+\DIFdelbegin %DIFDELCMD < 
+
+%DIFDELCMD <  %%%
+\DIFdelend\end{document}
